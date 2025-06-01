@@ -1,0 +1,19 @@
+[Unit]
+Description=Kafka consumer for Gbsp (:%b)
+Wants=online.target
+
+
+[Service]
+Type=notify
+SyslogIdentifier=
+ExecStart=/usr/bin/bundle exec rake kafka:consumer[,%b]
+WorkingDirectory=/var/sites/gbsp/current
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+NotifyAccess=
+WatchdogSec
+MemoryAccounting
+CpuAccounting
+
+[Install]

@@ -1,0 +1,24 @@
+{"orderid":"120","level":15,"openid":"gold_307","origin":"JPY","payway":"eb39161bd3d494a891117b4ff0c521e8","evetn_name":"GPA.3320-9448-9274-75118","role_id":"10101","devicecode":"0","event_name":"Payment","payment_itemid":"1","currency":"1180000","time":"","vip_level":0,"zone_offset":9,"billno":"13305809120818","account":"78800","rawmoney":0}
+{"role_id":"10101","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"10101","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"1180000"}}
+{"role_id":"10101","zone_offset":9,"#type":"user_add","properties":{}}
+{"orderid":"120","level":11,"openid":"gold_26002","origin":"JPY","payway":"E7EBFD3B-2734-4102-BCD6-12BA22A14BA6","evetn_name":"710001464395792","role_id":"10102","devicecode":"0","event_name":"Payment","payment_itemid":"1","currency":"65000","time":"","vip_level":0,"zone_offset":9,"billno":"13700945821593","account":"3800","rawmoney":0}
+{"role_id":"10102","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"10102","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"65000"}}
+{"role_id":"10102","zone_offset":9,"#type":"user_add","properties":{}}
+{"orderid":"101","level":11,"openid":"gold_225","origin":"JPY","payway":"46BF0CCB-91E0-4ED2-853D-EF90664A34DA","evetn_name":"420001679264709","role_id":"10102","devicecode":"0","event_name":"Payment","payment_itemid":"1","currency":"120000","time":"","vip_level":0,"zone_offset":9,"billno":"13572097322638","account":"7800","rawmoney":0}
+{"role_id":"10102","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"10102","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"120000"}}
+{"role_id":"10102","zone_offset":9,"#type":"user_add","properties":{}}
+{"amountGift":0,"orderid":"GPA.3320-9448-9274-75118","level":120,"openid":"13305809120818","origin":"0","channel":10101,"payway":"Google","money":78800,"role_id":"13305809120818","devicecode":"eb39161bd3d494a891117b4ff0c521e8","event_name":"Payment","payment_itemid":"gold_307","currency":"JPY","time":"2023-11-16 15:48:02.000","region":1,"vip_level":15,"zone_offset":9,"billno":"GPA.3320-9448-9274-75118","device":"Andriod","status":0,"rawmoney":1180000}
+{"role_id":"13305809120818","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"13305809120818","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"JPY"}}
+{"role_id":"13305809120818","zone_offset":9,"#type":"user_add","properties":{"pay_amount":78800}}
+{"amountGift":0,"orderid":"710001464395792","level":120,"openid":"13700945821593","origin":"0","channel":10102,"payway":"AppStore","money":3800,"role_id":"13700945821593","devicecode":"E7EBFD3B-2734-4102-BCD6-12BA22A14BA6","event_name":"Payment","payment_itemid":"gold_26002","currency":"JPY","time":"2023-11-16 16:11:51.000","region":1,"vip_level":11,"zone_offset":9,"billno":"710001464395792","device":"IOS","status":0,"rawmoney":65000}
+{"role_id":"13700945821593","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"13700945821593","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"JPY"}}
+{"role_id":"13700945821593","zone_offset":9,"#type":"user_add","properties":{"pay_amount":3800}}
+{"amountGift":0,"orderid":"420001679264709","level":101,"openid":"13572097322638","origin":"0","channel":10102,"payway":"AppStore","money":7800,"role_id":"13572097322638","devicecode":"46BF0CCB-91E0-4ED2-853D-EF90664A34DA","event_name":"Payment","payment_itemid":"gold_225","currency":"JPY","time":"2023-11-16 16:24:27.000","region":1,"vip_level":11,"zone_offset":9,"billno":"420001679264709","device":"IOS","status":0,"rawmoney":120000}
+{"role_id":"13572097322638","zone_offset":9,"#type":"user_set_once","properties":{}}
+{"role_id":"13572097322638","zone_offset":9,"#type":"user_set","properties":{"pay_currency":"JPY"}}
+{"role_id":"13572097322638","zone_offset":9,"#type":"user_add","properties":{"pay_amount":7800}}

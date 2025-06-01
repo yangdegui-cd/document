@@ -1,0 +1,16 @@
+数据库: gbsp-alert-data
+表名: 
+  - bigdata-check-log 大数据检测入库数据
+  - trino-check-dwd-log  trino检测dwd入库数据
+  - trino-check-accuracy trino检查中间表完整性
+  - trino-check-integrity trino检测中间表数据准确性
+
+
+
+CREATE TABLE IF NOT EXISTS trino_check_integrity (
+          start_server_date VARCHAR(20) not null,
+          missing_date VARCHAR(30) not null,
+          project_name VARCHAR(20),
+          table_name VARCHAR(30)
+          updated_at varchar(30) not null,
+        )

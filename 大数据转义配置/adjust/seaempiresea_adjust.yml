@@ -1,0 +1,132 @@
+# 配置时间限制, 仅在安装后的 2 天内做解析处理, 其他时间跳过
+# 单位为'天'
+# after_install_at_days <= 0, 为不限制
+after_install_at_days: 2
+
+# 配置时区, 默认为 8
+timezone:
+  default: 8
+  r_1: 8
+  r_2: 8
+  r_3: 8
+  r_4: 8
+
+# 遇到以下事件时,才做解析处理, 其他事件跳过
+include_event:
+  - install
+  - adjust_cost
+  - install_update
+  - session
+  - login
+  - role_login
+
+#  以下事件做 user_set 处理, 其他事件做 user_set_once 处理,
+#  事件应包含到 include_event 数组中, 未包含则不做处理
+#  重要: 数组中的事件不受 after_install_at_days 影响,
+#  1. 避免安装后长时间没有登录受 after_install_at_days 影响导致的用户属性丢失
+#  2. 有可能存在更新用户属性的情况, 例如 install_update 事件
+#  一般是 自定义注册事件、install_update、attribution_update 这几个事件
+user_set_event:
+  - install_update
+
+# 需记录的事件, 其他事件仅做 用户属性 处理, 该数组中的事件回作为 事件 处理
+# 事件应包含到 include_event 数组中
+# 未包含则不做处理
+record_event:
+  #  - install
+  - install_update
+
+# 以下事件做 update_event 处理
+record_update_event:
+  - adjust_cost
+
+#  更新时间的 event_id 生成规则,  根据以下配置的字段拼接的字符串做 md5 生成
+record_update_event_id_joint_fields:
+  default:
+    - network_name
+    - campaign_id
+    - adgroup_id
+    - creative_id
+    - country
+  r_1:
+    - day
+    - app
+    - os_name
+    - country
+    - country_code
+    - currency
+    - currency_code
+    - app_network
+    - store_type
+    - store_id
+    - network
+    - partner_name
+    - partner_id
+    - campaign
+    - campaign_network
+    - campaign_id_network
+    - adgroup
+    - adgroup_network
+    - adgroup_id_network
+    - source_network
+    - source_id_network
+    - creative
+    - creative_network
+    - creative_id_network
+
+# 需要入库的 用户属性 字段,  其他字段过滤
+include_user_field:
+  - network_name
+  - campaign_name
+  - adgroup_name
+  - creative_name
+  - tracker_name
+  - fb_ins_ref
+  - country
+  - city
+  - ip_address
+  - os_name
+  - google_ads_campaign_id
+  - google_ads_adgroup_id
+  - google_ads_creative_id
+  -
+  # 用户属性 字段别名, 和 facebook 字段名别名
+alias_field:
+  fb_ins_ref_campaign_group_name: campaign_name
+  fb_ins_ref_campaign_name: adgroup_name
+  fb_ins_ref_adgroup_name: creative_name
+  ip_address: ip
+  google_ads_campaign_id: campaign_id
+  google_ads_adgroup_id: adgroup_id
+  google_ads_creative_id: creative_id
+  campaign_id_network: campaign_id
+  adgroup_id_network: adgroup_id
+  creative_id_network: creative_id
+
+# fb_ins_ref映射
+fb_ins_ref_alias_field:
+  campaign_group_id: campaign_id
+  campaign_id: adgroup_id
+  adgroup_id: creative_id
+
+# 关键字段 key映射
+primary_key_mapping:
+  default:
+    account_id: ta_account_id
+    distinct_id: adid
+  r_1:
+    account_id: ta_account_id
+    distinct_id: adid
+  r_2:
+    account_id: ta_account_id
+    distinct_id: idfa
+  r_3:
+    account_id: ta_account_id
+    distinct_id: idfv
+
+# 关键字段 key检查规则
+# some_one: 有一个就行
+# has_all: 全部都需有
+primary_key_check_rule: some_one
+
+

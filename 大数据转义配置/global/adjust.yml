@@ -1,0 +1,22 @@
+timezone:
+  8b5db6ac-5972-576a-b2eb-2c6ef1621830: 8
+alias_field:
+  event_name: adjust_event_name
+include_event:
+  - session
+  - Login
+  - PushToken
+include_field:
+  - network_name
+  - campaign_name
+  - adgroup_name
+  - creative_name
+  - campaign_id
+  - adgroup_id
+  - creative_id
+  - ip_address
+  - country
+  - adid
+primary_key_mapping:
+  8b5db6ac-5972-576a-b2eb-2c6ef1621830:  
+    account_id: userId

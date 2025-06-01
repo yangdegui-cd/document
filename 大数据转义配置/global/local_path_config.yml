@@ -1,0 +1,85 @@
+# record_user_event_csv_path  用户属性配置文档path  是否必须: 是
+
+# record_event_xlsx_path 事件转义配置文档path  是否必须: 是
+
+# event_alias_name_map_path 事件别名配置文档path 是否必须: 否
+
+# error_event_log_path 事件转义错误日志path 是否必须: 是
+
+# error_row_log_path 事件错误行记录日志path 是否必须: 是
+
+# alert_config_path 事件警报config文档path 是否必须: 否
+
+# alert_xlsx_path 事件警报触发条件配置文档path 是否必须: 否
+
+# timezone_offset 时区偏移量 是否必须: 是
+
+# include_events 事件转义配置文档中需要转义的事件 null表示全部转义  是否必须: 否
+
+# timezone_field_name
+# 时区字段名,  该字段值为时区偏移量, 值格式为 +08:00 -08:00 8 -8 等, 偏移量需 >= -12 && <= 12
+# 该字段不配置时, 或者值不正确时, 会使用timezone_offset字段的值作为时区偏移量
+# 是否必须: 否
+
+# event_name_col_index 事件名所在列的索引, 从0开始计数 是否必须: 是
+
+# special_order
+# 是否使用特殊的订单库数据, 该配置项为true时, 会使用特殊的订单库数据, 该配置项为false时, 会使用日志数据 是否必须: 否
+# 判断是否为特殊订单库数据的依据为: 数据第一列小写为"payment"
+
+# order_cols 订单库数据的列名, 该配置项为特殊订单库数据时, 会使用该配置项的值作为订单库数据的列名, 该配置项为日志数据时, 会使用日志数据的列名 是否必须: 否
+# order_Type 订单库数据的类型, 该配置项为特殊订单库数据时, 会使用该配置项的值作为订单库数据的类型, 该配置项为日志数据时, 会使用日志数据的类型 是否必须: 否
+
+
+
+
+dhpk_cn:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/dhpk/userEventDhpk.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/dhpk/sincetimesDhpk.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/dhpk/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/dhpk/error-rows.log
+  timezone_offset: 8
+  event_name_col_index: 1
+boomfield_sea:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/boomfield/userEvent.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/boomfield/sincetimesTransform.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/boomfield/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/boomfield/error-rows.log
+  timezone_offset: 8
+  event_name_col_index: 3
+seaempire_sea:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/seaempireSea/userEventSeaempireSea.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/seaempireSea/sincetimesSeaempireSea.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/seaempireSea/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/seaempireSea/error-rows.log
+  timezone_offset: 9
+  event_name_col_index: 19
+  timezone_field_name: timeszone
+dow_jp:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/dow/userEventDow.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/dow/sinceTimesDow.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/dow/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/dow/error-rows.log
+  timezone_offset: 9
+  event_name_col_index: 3
+  special_order: true
+  order_cols: billno,openid,payment_itemid,region,#account_id,channel,device,account,money,orderid,level,vip_level,status,#time,payway,devicecode,origin,currency,rawmoney,amountGift,id
+  order_type: string,string,string,int,string,int,string,string,int,string,int,int,int,datetime,string,string,string,string,int,int,int
+longnv:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/longnv/userEventLongnv.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/longnv/sinceTimesHuntress.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/longnv/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/longnv/error-rows.log
+  event_name_col_index: 2
+  special_order: true
+  order_cols: event_name,payment_id,date,openid,region,#account_id,channel,cashid,money,level,vip_level,origin,#time,device
+  order_type: string,string,string,string,int,string,int,int,int,int,int,int,datetime,string
+dow2:
+  record_user_event_csv_path: /Users/yangdegui/project/trino-transformer/dow2/userEventDow2.csv
+  record_event_xlsx_path: /Users/yangdegui/project/trino-transformer/dow2/sincetimesDow2.xlsx
+  error_event_log_path: /Users/yangdegui/project/trino-transformer/dow2/error-events.log
+  error_row_log_path: /Users/yangdegui/project/trino-transformer/dow2/error-rows.log
+  event_name_col_index: 17
+  special_order: true
+  order_cols: event_name,id,billno,openid,payment_itemid,productid,env_type,region,#account_id,channel,device,account,money,orderid,level,viplevel,status,#time,payway,devicecode,origin,currency,amountgift,extend,result,result_desc
+  order_type: string,int,String,String,String,String,String,int,String,int,String,String,int,String,int,int,int,time,String,String,String,String,int,String,String,String

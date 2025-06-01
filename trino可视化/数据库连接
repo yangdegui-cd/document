@@ -1,0 +1,16 @@
+[服务器trino]
+
+trino://taskdeploy:G5dAToqEzv7QK1UM@trino.sincetimes.com:8443/hive
+
+[本地mysql, 存储元数据]
+
+mysql://superset:6987528@127.0.0.1/superset
+
+mysql://adjust:6987528@119.28.131.99/superset
+
+
+
+ALTER USER 'superset'@'%' IDENTIFIED WITH mysql_native_password BY '6987528';
+
+
+GRANT ALL PRIVILEGES ON superset.* TO 'adjust'@'%';

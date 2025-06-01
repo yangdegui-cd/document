@@ -1,0 +1,16 @@
+属性名,属性显示名,属性类型,更新方式,触发事件,属性说明,计算属性,计算逻辑,内容更新时间
+first_login_time,首次登录时间,date,user_setOnce,LogOn,首次登录时上报,#time,每个#account_id首次触发login事件的时间,20230324
+first_pay_time,首次付费时间,date,user_setOnce,Payment,首次付费时上报,#time,每个#account_id首次触发payment事件的时间,20230324
+last_login_time,最后登录时间,date,user_set,LogOn,每次登录时设置,#time,每个#account_id最后一次触发login事件的时间,20230324
+last_pay_time,最后支付时间,date,user_set,Payment,每次支付时设置,#time,每个#account_id最后一次触发Payment事件的时间,20230324
+pay_amount_user,累计充值金额,int,user_add,Payment,每次付费时设置,money,每个#account_id最新的累计充值金额,20230324
+register_date,注册时间,date,user_setOnce,CreateUser,首次创角时设置,#time,每个#account_id首次触发CreateUser事件的时间,20230324
+vip_level_user,最新VIP等级,int,user_set,LogOut,每次登出时设置,vip_level,每个#account_id最新vip_level,20230324
+level_user,用户等级,int,user_set,LogOut,每次登出时设置,level,每个#account_id最新level,20230324
+gameid_user,GameID,int,user_setOnce,LogOn,首次登录时设置,gameid,每个#account_id首次触发login事件的gameid,20230324
+region_user,区号,int,user_setOnce,LogOn,首次登录时设置,region,每个#account_id首次触发login事件的server_id,20230324
+bundle_id_user,BundleID,int,user_setOnce,LogOn,首次登录时设置,bundle_id,每个#account_id首次触发login事件的bundle_id,20230324
+channel_user,渠道,int,user_setOnce,LogOn,首次登录时设置,channel,每个#account_id首次触发login事件的channel,20230324
+openid_user,Open Id,string,user_setOnce,LogOn,首次登录时设置,openid,每个#account_id首次触发login事件的openid,20230324
+diamond_remain_user,当前持有钻石,int,user_set,LogOut,每次登出时设置,diamond_remain,每个#account_id最新持有所有钻石,20230324
+user_name,玩家name,string,user_set,CreateUser,创角时 设置,user_name,每个#account_id对应的player name,20230324

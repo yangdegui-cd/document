@@ -1,0 +1,1 @@
+select event_name, count(*) from event where part_date >= '2023-09-01' and part_date <= '2023-09-10' group by 1

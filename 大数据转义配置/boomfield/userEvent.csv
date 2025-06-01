@@ -1,0 +1,7 @@
+属性名,属性显示名,属性类型,更新方式,触发事件,属性说明,计算属性,计算逻辑,内容更新时间
+first_login_time,首次登录时间,date,user_setOnce,Login,首次登录时上报,#time,每个#account_id首次触发login事件的时间,20230324
+first_pay_time,首次付费时间,date,user_setOnce,Pay,首次付费时上报,#time,每个#account_id首次触发payment事件的时间,20230324
+last_login_time,最后登录时间,date,user_set,Login,每次登录时设置,#time,每个#account_id最后一次触发login事件的时间,20230324
+last_pay_time,最后支付时间,date,user_set,Pay,每次支付时设置,#time,每个#account_id最后一次触发Payment事件的时间,20230324
+pay_amount_user,累计充值金额,int,user_add,Pay,每次付费时设置,money,每个#account_id最新的累计充值金额,20230324
+register_date,注册时间,date,user_setOnce,Register,首次创角时设置,#time,每个#account_id首次触发CreateUser事件的时间,20230324

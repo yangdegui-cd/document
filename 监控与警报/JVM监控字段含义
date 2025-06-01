@@ -1,0 +1,56 @@
+jvm_memory_bytes_used: JVM 使用的内存字节数。
+jvm_memory_bytes_committed: JVM 提交的内存字节数。
+jvm_memory_bytes_max: JVM 可以使用的最大内存字节数。
+jvm_memory_pool_bytes_used: 各种内存池使用的字节数。
+jvm_memory_pool_bytes_committed: 各种内存池提交的字节数。
+jvm_memory_pool_bytes_max: 各种内存池最大可用字节数。
+jvm_gc_collection_seconds_count: 垃圾回收发生的次数。
+jvm_gc_collection_seconds_sum: 垃圾回收所花费的总时间（秒）。
+
+jvm_threads_current: 当前活动线程数量。
+jvm_threads_peak: 峰值线程数量。
+jvm_threads_daemon: 当前活动的守护线程数量。
+
+jvm_classes_loaded: 当前加载的类总数。
+jvm_classes_unloaded: 自 JVM 启动以来卸载的类总数。
+
+process_cpu_seconds_total: 自应用启动以来消耗的 CPU 时间总和（秒）。
+system_cpu_load: 系统的 CPU 负载。
+process_cpu_load: JVM 进程的 CPU 负载。
+
+
+database_connection_pool_active: 当前活动的数据库连接数。
+java_lang_Memory_HeapMemoryUsage_committed:  指的是Java虚拟机（JVM）堆内存（Heap Memory）的已提交（Committed）内存量
+
+
+jvm_memory_bytes_used.heap =~ java_lang_Memory_HeapMemoryUsage_used
+java_lang_Memory_HeapMemoryUsage_used
+java_lang_Memory_HeapMemoryUsage_used: 堆内存
+java_lang_PS_Old_Gen_Usage_max: 堆内存老年代代（PS Old Generation)
+java_lang_PS_Eden_Space_PeakUsage_used: 年轻代内存
+java_lang_Metaspace_Usage_used: 永久代
+
+
+java_lang_OperatingSystem_FreeMemorySize :系统可用内存
+java_lang_OperatingSystem_TotalMemorySize :系统内存
+java.lang.OperatingSystem.MaxFileDescriptorCount: 系统的最大文件描述符数量
+java_lang_OperatingSystem_OpenFileDescriptorCount: 操作系统当前打开的文件描述符数量
+
+
+trino 
+trino_execution_executor_TaskExecutor_GlobalCpuTimeMicros_TotalCount:  Trino 执行器和任务执行占用CPU总时长(微秒)
+trino_memory_MemoryPool_ReservedBytes:  Trino 内存未分配内存
+trino_memory_MemoryPool_MaxBytes: Trino 最大内存
+trino_memory_MemoryPool_FreeBytes: Trino 可用内存
+trino_execution_QueryManager_UserErrorFailures_FiveMinute_Count: 5分钟错误数
+trino_execution_executor_MultilevelSplitQueue_SelectedCountLevel1_TotalCount: 累计Total
+
+trino_execution_executor_TaskExecutor_Tasks: 正在执行的任务数
+trino_execution_executor_TaskExecutor_LeafSplitCpuTime: 使用CPU时间
+trino_execution_executor_TaskExecutor_GlobalCpuTimeMicros_OneMinute_Count: CPU一分钟使用时间
+
+
+
+
+
+

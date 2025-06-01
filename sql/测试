@@ -1,0 +1,3 @@
+select * from AdjustCostAvg where  "install_date" = '2023-10-14' and network_name = 'Google Ads ACI'
+
+select "#account_id","network_name","ad_cost", "ad_cost_no_apportion", "ad_cost_noc_apportion", "ad_cost_n_apportion" from ResultTable where "install_date" = '2023-10-14' and network_name = 'Google Ads ACI'
