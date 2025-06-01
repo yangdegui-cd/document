@@ -1,0 +1,10 @@
+{
+	"user": "taskdeploy",
+	"password":"G5dAToqEzv7QK1UM",
+	"out_path": "/Users/yangdegui/document/20250106-财审/huntress_tw",
+	"project_name": "龙女台湾",
+	"schema_prefix": "huntress_twnew",
+	"begin_month": "2024-07",
+	"end_month": "2024-12",
+	"gold_rate": 2.0
+}
