@@ -140,7 +140,7 @@ function OnEvent(event, arg)
 				backx = backx - Wpattern[indexWeapon][indexPattern].x
 				backy = backy - Wpattern[indexWeapon][indexPattern].y
 				timestart = timestart + Wpattern[indexWeapon][indexPattern].d
-				Sleep3(timestart)
+				SleepToTime(timestart)
 				indexPattern = indexPattern + 1
 			else
 				backx2 = math.floor(backx / 40)
@@ -154,7 +154,7 @@ function OnEvent(event, arg)
 						tsleep3 = tsleep3 - 1
 						tsleep2 = tsleep2 + 1
 					end
-					Sleep2(tsleep2)
+					SleepTime(tsleep2)
 					backx1 = backx1 + backx / 40 - backx2
 					backy1 = backy1 + backy / 40 - backy2
 					if (backx1 >= 1) then
@@ -218,7 +218,7 @@ function OnEvent(event, arg)
 					tsleep3 = tsleep3 - 1
 					tsleep2 = tsleep2 + 1
 				end
-				Sleep2(tsleep2)
+				SleepTime(tsleep2)
 				backx1 = backx1 + backx / 40 - backx2
 				backy1 = backy1 + backy / 40 - backy2
 				if (backx1 >= 1) then
@@ -1564,14 +1564,14 @@ OutputLogMessage("--------------------------------------------------------------
 	end
 end
 
-function Sleep2(time)
+function SleepTime(time)
 	start = GetRunningTime()
 	while (time + start > GetRunningTime())
 	do
 	end
 end
 
-function Sleep3(time)
+function SleepToTime(time)
 	while (time > GetRunningTime())
 	do
 	end
