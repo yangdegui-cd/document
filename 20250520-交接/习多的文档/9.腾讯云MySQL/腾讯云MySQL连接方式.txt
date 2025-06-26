@@ -1,0 +1,2 @@
+【外网】mysql -h598999c8c5442.gz.cdb.myqcloud.com -P5471 -u root -p BIG-DATA!hq123
+【内网】mysql -h10.66.127.43 -u root -p BIG-DATA!hq123

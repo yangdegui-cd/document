@@ -1,0 +1,45 @@
+{
+  "parallel_num": 2,
+  "source": {
+    "type": "txtfile",
+    "parameter": {
+      "path": ["/data/hqfy/qkslg2t_om/extra_table/guidestep.csv"],
+      "encoding": "UTF-8",
+      "column": ["*"],
+      "fieldDelimiter": ","
+    }
+  },
+  "target": {
+    "appid": "1eb3c4463be9405e96ae7ddce5d385b5",
+    "table": "guidestep_stepid",
+    "table_desc": "新手引导流程表",
+    "partition_value": "@[{yyyyMMdd}-{1day}]",
+    "column": [
+      {
+        "name": "group_id",
+        "type": "varchar",
+        "comment": "分组ID"
+      },
+      {
+        "name": "step_id",
+        "type": "varchar",
+        "comment": "步骤ID"
+      },
+      {
+        "name": "is_compulsory",
+        "type": "varchar",
+        "comment": "是否强制"
+      },
+      {
+        "name": "step_rn",
+        "type": "int",
+        "comment": "步骤序号"
+      },
+      {
+        "name": "step_name",
+        "type": "varchar",
+        "comment": "步骤名称"
+      }
+    ]
+  }
+}

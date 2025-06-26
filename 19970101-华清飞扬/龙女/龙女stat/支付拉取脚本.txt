@@ -1,0 +1,12 @@
+vim /data/stat/syn2jishubu/do_get_pay.sh
+
+mkdir -p /data/tmpdir/pay_list/
+
+cat /data/web/timer_huntress/conf/database.properties
+
+10 0 * * * sh /data/stat/syn2jishubu/do_get_pay.sh 1 >> /data/stat/syn2jishubu/upload_paylist.log 2>&1 &
+
+vim /data/stat/syn2jishubu/do_get_ever_since_yseterday_paylist.sh
+
+chmod +x /data/stat/syn2jishubu/do_get_pay.sh
+chmod +x /data/stat/syn2jishubu/do_get_ever_since_yseterday_paylist.sh

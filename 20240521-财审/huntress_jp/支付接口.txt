@@ -1,0 +1,56 @@
+支付2个接口
+
+1. 拉起支付
+
+调用接口: PurchaseWebSocketApi.action("payment", .. , ..)
+参数: 
+    product_id: 商品档位ID,
+    money: 支付金额,元为单位,可以是小数,
+    currency: 货币单位,
+    platform: 支付平台, "apple", "google", "unity", 设置为"unity"时, 不验证票据
+    is_sandbox: 是否是沙盒充值
+
+返回值:
+    {   "id"=>1,
+        "player_id"=>1,
+        "order_id"=>"bd9212ad-d7dc-4c2a-bb39-62ba8ee3b52c",
+        "product_id"=>"hero_99",
+        "platform_order_id"=>nil,
+        "platform"=>"unity",
+        "is_sandbox"=>true,
+        "money"=>"0.99",
+        "currency"=>"USD",
+        "pay_time"=>nil,
+        "deliver_time"=>nil,
+        "status"=>"pending",
+        "created_at"=>"2025-06-18T07:25:54.374Z",
+        "updated_at"=>"2025-06-18T07:25:54.374Z"
+    } 
+
+2. 支付Callback接口
+调用接口: PurchaseWebSocketApi.action("payment_callback", .. , ..)
+参数:
+    product_id: 商品档位ID,
+    money: 支付金额,元为单位,可以是小数,
+    currency: 货币单位,
+    platform: 支付平台, "apple", "google", "unity", 设置为"unity"时, 不验证票据
+    is_sandbox: 是否是沙盒充值
+    order_id: 订单ID, 由拉起支付接口返回的order_id
+    platform_order_id: 平台订单ID, 由支付平台返回的订单ID
+    receipt_data: 支付平台返回的票据数据, 由支付平台返回的订单ID, platform为"unity"时, 也需要填个假的
+    pay_time: 支付时间, ISO8601格式, 例如 "2025-06-18T07:25:54.374Z"
+
+返回值
+    {
+        rewards: {
+            "diamonds" => 80,
+        },
+        player: {
+            "id" => 1,
+            "diamonds" => 80,
+            "gold" => 1000,
+            xxxx
+        },
+    }
+    rewards: 奖励数据, 例如 {"diamond" => 80}, 弹框用
+    player: 玩家数据, 例如 {"id" => 1, "diamonds" => 80, "gold" => 1000, ...}, 更新数据用

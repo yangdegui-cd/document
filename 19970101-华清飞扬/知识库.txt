@@ -1,0 +1,146 @@
+所有的日期字段如果是字符串的话, 格式为%Y-%m-%d
+trino语法中日期比较方法为 date_diff
+
+表名: dws_user_daily_di
+描述: 该表为每天活跃用户的信息表, 一个用户一天有一条数据, 记录玩家当天的活跃情况, 该表数据量较大, 使用分区表存储, 分区字段为part_date
+注意: 用户等同玩家,叫法不一样而已
+
+字段名,中文释义,数据类型
+date,日期,date
+role_id,用户id,varchar
+device_id,设备id,varchar
+open_id,华清id,varchar
+adid,广告id,varchar
+app_id,游戏APP_ID,varchar
+channel,游戏渠道,varchar
+zone_id,服务器id,varchar
+alliance_id,联盟id,varchar
+os,平台,varchar
+ip,登录IP,varchar
+country,国家,varchar
+network,广告渠道,varchar
+campaign,广告campaign,varchar
+creative,广告素材,varchar
+adgroup,广告组,varchar
+campaign_id,广告campaign_id,varchar
+creative_id,广告素材id,varchar
+adgroup_id,广告组id,varchar
+first_ts,当天首次登入时间,timestamp(3)
+last_ts,当天末次登入时间,timestamp(3)
+viplevel_min,当天vip最低等级,bigint
+viplevel_max,当天vip最高等级,bigint
+level_min,当天最低角色等级,bigint
+level_max,当天最高角色等级,bigint
+rank_min,当天最低段位等级,bigint
+rank_max,当天最高段位等级,bigint
+online_time,在线时间(分钟),bigint
+login_times,登入次数,bigint
+exchange_rate,当日汇率,double
+firstpay_ts,当天首次支付时间,timestamp(3)
+firstpay_level,当天首次支付等级,bigint
+firstpay_goodid,当天首次支付礼包,varchar
+firstpay_money,当天首次支付金额,double
+lastpay_ts,当天末次支付时间,timestamp(3)
+lastpay_level,当天末次支付等级,bigint
+lastpay_goodid,当天末次支付礼包,varchar
+lastpay_money,当天末次支付金额,double
+pay_count,当天支付次数,bigint
+money,当天累计支付(当地货币)金额,double
+money_rmb,当天累计支付(人民币)金额,double
+sincetimes_gain,当天代币增加,bigint
+sincetimes_cost,当天代币减少,bigint
+sincetimes_end,当天代币冗余,bigint
+core_gain,当天核心货币增加,bigint
+core_cost,当天核心货币消耗,bigint
+core_end,当天核心货币冗余,bigint
+free_gain,当天核心免费货币增加,bigint
+free_cost,当天核心免费货币消耗,bigint
+free_end,当天核心免费货币冗余,bigint
+paid_gain,当天核心付费货币增加,bigint
+paid_cost,当天核心付费货币消耗,bigint
+paid_end,当天核心付费货币冗余,bigint
+part_date,日期,varchar
+
+=====
+
+表名: dws_user_daily_derive_di
+描述: 该表为每天活跃用户的累计信息表, 一个用户一天有一条数据, 记录玩家截止到日期的累计信息情况, 该表数据量较大, 使用分区表存储, 分区字段为part_date
+注意: 用户等同玩家,叫法不一样而已
+
+字段名,中文释义,数据类型
+date,日期,date
+role_id,用户id,varchar
+login_days,留存天数|登入天数,bigint
+is_firstpay,当天是否首次付费,bigint
+is_pay,当天是否付费,bigint
+is_paid,历史(包含当天)是否付费,bigint
+money_ac,从开服到当日累计付费金额(原始货币),double
+moneyrmb_ac,从开服到当日累计付费金额(人民币) double
+sincetimes_end,从开服到当日代币冗余,bigint
+core_end,从开服到当日核心货币冗余,bigint
+free_end,从开服到当日核心免费货币冗余,bigint
+paid_end,从开服到当日核心付费货币冗余,bigint
+part_date,日期(分区字段;格式:%Y-%m-%d) ,varchar
+
+
+=====
+
+表名: dws_user_info_di
+描述: 该表为用户信息表, 一个用户终身只用一条数据, 记录玩家目前的基本信息, 会随着玩家的成长而更新.
+注意: 用户等同玩家,叫法不一样而已
+
+字段名,中文释义,数据类型
+role_id,用户id,varchar
+device_id,设备id,varchar
+open_id,华清id|open_id,varchar
+adid,广告id|AdjustId,varchar
+zone_id,服务器id,varchar
+alliance_id,联盟id,varchar
+os,平台,varchar
+channel,游戏渠道,varchar
+ip,IP,varchar
+country,国家,varchar
+network,广告渠道,varchar
+campaign,广告campaign,varchar
+creative,广告素材,varchar
+adgroup,广告组,varchar
+campaign_id,广告campaign_id,varchar
+creative_id,广告素材id,varchar
+adgroup_id,广告组id,varchar
+adtag,用户分类,varchar
+adcost,购买该用户的广告花费,varchar
+is_test,是否测试用户,bigint
+install_ts,安装时间,timestamp(3)
+install_date,安装日期,date
+lastlogin_ts,最后登入时间,timestamp(3)
+firstpay_ts,破冰时间|首次付费时间,timestamp(3)
+firstpay_date,破冰日期|首次付费日期,date
+firstpay_level,破冰等级|首次付费时等级,bigint
+firstpay_goodid,破冰档位|首次付费档位,varchar
+firstpay_money,破冰金额|首次付费的金额,double
+lastpay_ts,最后购买时间,timestamp(3)
+lastpay_level,最后购买时等级,bigint
+lastpay_goodid,最后购买时档位,varchar
+lastpay_money,最后购买金额,double
+is_paid,是否付费用户,bigint
+pay_count,付费次数,bigint
+money_ac,累计付费金额(原始货币),double
+moneyrmb_ac,累计付费金额(人民币),double
+sincetimes_gain,代币增加,bigint
+sincetimes_cost,代币减少,bigint
+sincetimes_end,代币冗余,bigint
+core_gain,核心货币增加,bigint
+core_cost,核心货币消耗,bigint
+core_end,核心货币冗余,bigint
+free_gain,核心免费货币增加,bigint
+free_cost,核心免费货币消耗,bigint
+free_end,核心免费货币冗余,bigint
+paid_gain,核心付费货币增加,bigint
+paid_cost,核心付费货币消耗,bigint
+paid_end,核心付费货币冗余,bigint
+vip_level,vip等级,bigint
+level,等级,bigint
+rank,排位,bigint
+login_days,登录天数,bigint
+login_times,登录次数,bigint
+online_time,在线时长(分组),bigint

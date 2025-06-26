@@ -1,0 +1,9 @@
+【骑砍SLG-统计】欧美
+#68 骑砍SLG 华清欧美 统计 172.18.0.1
+43.153.91.139|root|qkslg$6668|22|p
+#需要通过公钥登录，登录方式：
+【海外跳板机】
+43.132.28.127|root|2XG8fdwq=V6j
+su - haiwai
+./ssh2_qkslg_log_om_login
+cd /data
