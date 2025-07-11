@@ -1,0 +1,11 @@
+{
+  "plugins": ["@prettier/plugin-sql"],
+  "printWidth": 120,
+  "sqlKeywordCase": "upper",
+  "sqlFormatter": {
+    "functionCall": {
+      "keepOnSingleLine": true,
+      "keepOnSingleLineFor": ["*"]  
+    }
+  }
+}

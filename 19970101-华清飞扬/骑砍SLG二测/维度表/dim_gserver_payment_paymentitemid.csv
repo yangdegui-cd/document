@@ -1,0 +1,149 @@
+payment_itemid,payment_name,payment_cate,payment_act,payment_type_id
+gift_hero_Richard_1,理查德专属礼包1,常规礼包,常规礼包,regular_gift
+gift_hero_Richard_2,理查德专属礼包2,常规礼包,常规礼包,regular_gift
+gift_hero_Richard_3,理查德专属礼包3,常规礼包,常规礼包,regular_gift
+gift_hero_Richard_4,理查德专属礼包4,常规礼包,常规礼包,regular_gift
+gift_hero_Richard_5,理查德专属礼包5,常规礼包,常规礼包,regular_gift
+gift_hero_Victoria1,维多利亚专属礼包1,常规礼包,常规礼包,regular_gift
+gift_hero_Victoria2,维多利亚专属礼包2,常规礼包,常规礼包,regular_gift
+gift_hero_Victoria3,维多利亚专属礼包3,常规礼包,常规礼包,regular_gift
+gift_hero_Victoria4,维多利亚专属礼包4,常规礼包,常规礼包,regular_gift
+gift_hero_Victoria5,维多利亚专属礼包5,常规礼包,常规礼包,regular_gift
+gift_buildings_1,快速发展礼包1,常规礼包,常规礼包,regular_gift
+gift_buildings_2,快速发展礼包2,常规礼包,常规礼包,regular_gift
+gift_buildings_3,快速发展礼包3,常规礼包,常规礼包,regular_gift
+gift_buildings_4,快速发展礼包4,常规礼包,常规礼包,regular_gift
+gift_buildings_5,快速发展礼包5,常规礼包,常规礼包,regular_gift
+gift_hero_1,英雄成长礼包1,常规礼包,常规礼包,regular_gift
+gift_hero_2,英雄成长礼包2,常规礼包,常规礼包,regular_gift
+gift_hero_3,英雄成长礼包3,常规礼包,常规礼包,regular_gift
+gift_hero_4,英雄成长礼包4,常规礼包,常规礼包,regular_gift
+gift_hero_5,英雄成长礼包5,常规礼包,常规礼包,regular_gift
+gift_research_1,研究礼包1,常规礼包,常规礼包,regular_gift
+gift_research_2,研究礼包2,常规礼包,常规礼包,regular_gift
+gift_research_3,研究礼包3,常规礼包,常规礼包,regular_gift
+gift_research_4,研究礼包4,常规礼包,常规礼包,regular_gift
+gift_research_5,研究礼包5,常规礼包,常规礼包,regular_gift
+gift_train_1,训练礼包1,常规礼包,常规礼包,regular_gift
+gift_train_2,训练礼包2,常规礼包,常规礼包,regular_gift
+gift_train_3,训练礼包3,常规礼包,常规礼包,regular_gift
+gift_train_4,训练礼包4,常规礼包,常规礼包,regular_gift
+gift_train_5,训练礼包5,常规礼包,常规礼包,regular_gift
+gift_hero_pool_card_1,招募礼包1,常规礼包,常规礼包,regular_gift
+gift_hero_pool_card_2,招募礼包2,常规礼包,常规礼包,regular_gift
+gift_hero_pool_card_3,招募礼包3,常规礼包,常规礼包,regular_gift
+gift_hero_pool_card_4,招募礼包4,常规礼包,常规礼包,regular_gift
+gift_hero_pool_card_5,招募礼包5,常规礼包,常规礼包,regular_gift
+diamond_gift1,钻石1首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift2,钻石1,钻石礼包,钻石礼包,diamond_gift
+diamond_gift3,钻石2首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift4,钻石2,钻石礼包,钻石礼包,diamond_gift
+diamond_gift5,钻石3首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift6,钻石3,钻石礼包,钻石礼包,diamond_gift
+diamond_gift7,钻石4首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift8,钻石4,钻石礼包,钻石礼包,diamond_gift
+diamond_gift9,钻石5首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift10,钻石5,钻石礼包,钻石礼包,diamond_gift
+diamond_gift11,钻石6首充,钻石礼包,钻石礼包,diamond_gift
+diamond_gift12,钻石6,钻石礼包,钻石礼包,diamond_gift
+signin_gift1,首充,首充,首充,sign_in_gift
+constructionqueue2gift_gift1,第二建筑队列,建筑队列,建筑队列,construction_queue_2_gift
+battle_pass_1,战令高级档位,战令,战令,battle_pass
+signin_gift_select1,首充1,首充,首充,sign_in_gift
+signin_gift_select2,首充2,首充,首充,sign_in_gift
+signin_gift_select3,首充3,首充,首充,sign_in_gift
+gift_vip_1,VIP1礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_2,VIP2礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_3,VIP3礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_4,VIP4礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_5,VIP5礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_6,VIP6礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_7,VIP7礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_8,VIP8礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_9,VIP9礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_10,VIP10礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_11,VIP11礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_12,VIP12礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_13,VIP13礼包 ,VIP礼包,VIP礼包,vip_gift
+gift_vip_14,VIP14礼包 ,VIP礼包,VIP礼包,vip_gift
+face_gift_buildings_8,拍脸礼包城堡8级,拍脸礼包,拍脸礼包,face_gift
+face_gift_buildings_10,拍脸礼包城堡10级,拍脸礼包,拍脸礼包,face_gift
+face_gift_buildings_12,拍脸礼包城堡12级,拍脸礼包,拍脸礼包,face_gift
+face_gift_buildings_15,拍脸礼包城堡15级,拍脸礼包,拍脸礼包,face_gift
+face_gift_buildings_18,拍脸礼包城堡18级,拍脸礼包,拍脸礼包,face_gift
+face_gift_buildings_20,拍脸礼包城堡20级,拍脸礼包,拍脸礼包,face_gift
+face_gift_golden_hero_Talia,拍脸礼包塔莉娅,拍脸礼包,拍脸礼包,face_gift
+face_gift_golden_hero_Thomas,拍脸礼包托马斯,拍脸礼包,拍脸礼包,face_gift
+face_gift_golden_hero_Vahram,拍脸礼包瓦赫拉姆,拍脸礼包,拍脸礼包,face_gift
+gift_big_Speed_1,大额礼包1,大额礼包,大额礼包,big_gift
+gift_big_Victoria_1,大额礼包2,大额礼包,大额礼包,big_gift
+gift_big_Dragon_level_1,大额礼包3,大额礼包,大额礼包,big_gift
+gift_big_Dragon_talent_1,大额礼包4,大额礼包,大额礼包,big_gift
+gift_big_Equipment_1,大额礼包5,大额礼包,大额礼包,big_gift
+gift_lifetime_Richard_1,终生礼包理查德1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Richard_2,终生礼包理查德2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Victoria_1,终生礼包维多利亚1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Victoria_2,终生礼包维多利亚2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Victoria_3,终生礼包维多利亚3,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Victoria_4,终生礼包维多利亚4,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Victoria_5,终生礼包维多利亚5,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Talia_1,终生礼包塔利亚1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Talia_2,终生礼包塔利亚2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Talia_3,终生礼包塔利亚3,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Talia_4,终生礼包塔利亚4,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Talia_5,终生礼包塔利亚5,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Building_1,终生礼包城建1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Building_2,终生礼包城建2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_1,终生礼包龙等级1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_2,终生礼包龙等级2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_talent_1,终生礼包龙天赋1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_talent_2,终生礼包龙天赋2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Equipment_1,终生礼包龙装备1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Equipment_2,终生礼包龙装备2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_low_1,终生礼包龙等级低级1,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_low_2,终生礼包龙等级低级2,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_low_3,终生礼包龙等级低级3,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_low_4,终生礼包龙等级低级4,终生礼包,终生礼包,lifetime_gift
+gift_lifetime_Dragon_level_low_5,终生礼包龙等级低级5,终生礼包,终生礼包,lifetime_gift
+gift_regular_Dragon_talent_low_1,终生礼包龙天赋低级1,终生礼包,终生礼包,lifetime_gift
+gift_regular_Dragon_talent_low_2,终生礼包龙天赋低级2,终生礼包,终生礼包,lifetime_gift
+gift_regular_Dragon_talent_low_3,终生礼包龙天赋低级3,终生礼包,终生礼包,lifetime_gift
+gift_regular_Dragon_talent_low_4,终生礼包龙天赋低级4,终生礼包,终生礼包,lifetime_gift
+gift_regular_Dragon_talent_low_5,终生礼包龙天赋低级5,终生礼包,终生礼包,lifetime_gift
+gift_regular_Equipment_low_1,终生礼包龙装备低级1,终生礼包,终生礼包,lifetime_gift
+gift_regular_Equipment_low_2,终生礼包龙装备低级2,终生礼包,终生礼包,lifetime_gift
+gift_regular_Equipment_low_3,终生礼包龙装备低级3,终生礼包,终生礼包,lifetime_gift
+gift_regular_Equipment_low_4,终生礼包龙装备低级4,终生礼包,终生礼包,lifetime_gift
+gift_regular_Equipment_low_5,终生礼包龙装备低级5,终生礼包,终生礼包,lifetime_gift
+gift_week_Recruit_1,周更礼包招募1,周更礼包,周更礼包,week_gift
+gift_week_Recruit_2,周更礼包招募2,周更礼包,周更礼包,week_gift
+gift_week_Recruit_3,周更礼包招募3,周更礼包,周更礼包,week_gift
+gift_week_Recruit_4,周更礼包招募4,周更礼包,周更礼包,week_gift
+gift_week_Recruit_5,周更礼包招募5,周更礼包,周更礼包,week_gift
+gift_week_Speed_1,周更礼包速度1,周更礼包,周更礼包,week_gift
+gift_week_Speed_2,周更礼包速度2,周更礼包,周更礼包,week_gift
+gift_week_Speed_3,周更礼包速度3,周更礼包,周更礼包,week_gift
+gift_week_Speed_4,周更礼包速度4,周更礼包,周更礼包,week_gift
+gift_week_Speed_5,周更礼包速度5,周更礼包,周更礼包,week_gift
+gift_week_Dragon_level_1,周更礼包龙等级1,周更礼包,周更礼包,week_gift
+gift_week_Dragon_level_2,周更礼包龙等级2,周更礼包,周更礼包,week_gift
+gift_week_Dragon_level_3,周更礼包龙等级3,周更礼包,周更礼包,week_gift
+gift_week_Dragon_level_4,周更礼包龙等级4,周更礼包,周更礼包,week_gift
+gift_week_Dragon_level_5,周更礼包龙等级5,周更礼包,周更礼包,week_gift
+gift_week_Dragon_talent_1,周更礼包龙天赋1,周更礼包,周更礼包,week_gift
+gift_week_Dragon_talent_2,周更礼包龙天赋2,周更礼包,周更礼包,week_gift
+gift_week_Dragon_talent_3,周更礼包龙天赋3,周更礼包,周更礼包,week_gift
+gift_week_Dragon_talent_4,周更礼包龙天赋4,周更礼包,周更礼包,week_gift
+gift_week_Dragon_talent_5,周更礼包龙天赋5,周更礼包,周更礼包,week_gift
+gift_week_Equipment_1,周更礼包龙装备1,周更礼包,周更礼包,week_gift
+gift_week_Equipment_2,周更礼包龙装备2,周更礼包,周更礼包,week_gift
+gift_week_Equipment_3,周更礼包龙装备3,周更礼包,周更礼包,week_gift
+gift_week_Equipment_4,周更礼包龙装备4,周更礼包,周更礼包,week_gift
+gift_week_Equipment_5,周更礼包龙装备5,周更礼包,周更礼包,week_gift
+daily_gift1,每日礼包1,每日礼包,每日礼包,daily_gift
+daily_gift2,每日礼包2,每日礼包,每日礼包,daily_gift
+daily_gift3,每日礼包3,每日礼包,每日礼包,daily_gift
+daily_gift4,每日礼包4,每日礼包,每日礼包,daily_gift
+daily_gift5,每日礼包5,每日礼包,每日礼包,daily_gift
+daily_gift6,每日礼包6,每日礼包,每日礼包,daily_gift
+daily_gift7,每日礼包7,每日礼包,每日礼包,daily_gift

@@ -8,6 +8,7 @@ install_date date,
 lastlogin_date date,
 level_max bigint,
 viplevel_max bigint,
+pay_count bigint,
 money decimal(36, 2),
 money_ac decimal(36, 2),
 pay_rank bigint,
@@ -21,7 +22,7 @@ delete from hive.qkslg2t_om_w.ads_top_daily_di where part_date >= '{yesterday}' 
 insert into hive.qkslg2t_om_w.ads_top_daily_di
 (date, role_id, zone_id,
 channel, is_old_user, install_date, lastlogin_date,
-level_max, viplevel_max,
+level_max, viplevel_max, pay_count,
 money, money_ac, pay_rank, login_time,
 part_date)
 
@@ -75,7 +76,7 @@ group by 1, 2, 3
 select
 a.date, a.role_id, a.zone_id,
 a.channel, a.is_old_user, a.install_date, a.lastlogin_date,
-a.level_max, a.viplevel_max,
+a.level_max, a.viplevel_max,a.pay_count,
 a.money, a.money_ac, a.pay_rank, b.login_time, a.part_date
 from user_daily_join a
 left join date_cube_agg b
