@@ -11,8 +11,8 @@ host: 119.28.83.11
 lftp -u lnzj,lnzj\$6668 sftp://119.28.83.11
 lftp -e "set sftp:connect-program 'ssh -oHostKeyAlgorithms=ssh-rsa,ssh-dss -oKexAlgorithms=diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1'" -u lnzj,lnzj\$6668 sftp://119.28.83.11
 
-
-crontab -e
+# 统计服务器定时脚本
+# crontab -e
 # 每天0点上传游戏日志
 10 0 * * * /data/logupload/uplog2othermachine.sh /data/logupload/config.ini 1 >> /data/logupload/uplog2othermachine.log 2>&1
 # 每天0点上传游戏充值日志
@@ -20,10 +20,25 @@ crontab -e
 # 每天0点上传网页充值日志
 15 0 * * * /data/logupload/uploadCoinpay.sh  1 >> /data/logupload/uploadPay.log 2>&1
 
+# 香港中转服务器定时脚本 
+# su - logupload
+# crontab -e
+# lnzj_tw 日志上传cos
+# lnzj_tw 游戏内支付日志上传cos
+# lnzj_tw 网页支付日志上传cos
+# lnzj_tw Adjust日志生成tar,md5文件
+# lnzj_tw Adjust日志上传cos
+# lnzj_tw 广告成本日志生成tar,md5文件
+# lnzj_tw 广告成本日志上传cos
+# lnzj_tw
+33 0 * * * /data/script/cos_lnzj_tw/uplog2cos.sh /data/script/cos_lnzj_tw/config.ini 1 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+40 0 * * * /data/script/cos_lnzj_tw/uplog2cos.sh /data/script/cos_lnzj_tw/gamepay_config.ini 1 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+45 0 * * * /data/script/cos_lnzj_tw/uplog2cos.sh /data/script/cos_lnzj_tw/coinpay_config.ini 1 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+25 0 * * * /data/script/cos_lnzj_tw/generateTarMd5File.sh /data/script/cos_lnzj_tw/ad_config.ini 1 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+35 0 * * * /data/script/cos_lnzj_tw/uplog2cos.sh /data/script/cos_lnzj_tw/ad_config.ini 1 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+40 13 * * * /data/script/cos_lnzj_tw/generateTarMd5File.sh /data/script/cos_lnzj_tw/adcost_config.ini 0 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
+10 14 * * * /data/script/cos_lnzj_tw/uplog2cos.sh /data/script/cos_lnzj_tw/adcost_config.ini 0 >> /data/script/cos_lnzj_tw/uplog2cos.log 2>&1 &
 
-crontab -e
-12 0 * * * /data/logupload/uploadGamepay.sh  1 >> /data/logupload/uploadGamepay.log 2>&1
-14 0 * * * /data/logupload/uploadCoinpay.sh  1 >> /data/logupload/uploadCoinpay.log 2>&1
 
 
 

@@ -12,7 +12,32 @@ https://dynamic‐adjust‐log.blustargames.com/ajevent/zjdyl_tw?sign=29f30ca5dd
 
 
 服务器日志:
-
-
+ip: 175.99.27.102
 path: /data/games/ra_hq_S130001/GameServer/logBus/
 
+服务器日志上传使用账号
+sudo useradd -m -d /home/zjdyl -s "/usr/local/bin/scponly" -c "zjdyl" -G scponly zjdyl
+passwd zjdyl
+zjdyl$2252
+
+# 统计服务器定时脚本
+# crontab -e
+# 每天0点上传游戏日志
+10 0 * * * /data/logupload/upload2huaqing.sh  1 >> /data/logupload/upload2huaqing.log 2>&1
+
+# 香港中转服务器定时脚本 
+# su - logupload
+# crontab -e
+# zjdyl_tw 日志上传cos
+# zjdyl_tw 游戏内支付日志上传cos
+# zjdyl_tw 网页支付日志上传cos
+# zjdyl_tw Adjust日志生成tar,md5文件
+# zjdyl_tw Adjust日志上传cos
+# zjdyl_tw 广告成本日志生成tar,md5文件
+# zjdyl_tw 广告成本日志上传cos
+# zjdyl_tw
+33 0 * * * /data/script/cos_zjdyl_tw/uplog2cos.sh /data/script/cos_zjdyl_tw/config.ini 1 >> /data/script/cos_zjdyl_tw/uplog2cos.log 2>&1 &
+25 0 * * * /data/script/cos_zjdyl_tw/generateTarMd5File.sh /data/script/cos_zjdyl_tw/ad_config.ini 1 >> /data/script/cos_zjdyl_tw/uplog2cos.log 2>&1 &
+35 0 * * * /data/script/cos_zjdyl_tw/uplog2cos.sh /data/script/cos_zjdyl_tw/ad_config.ini 1 >> /data/script/cos_zjdyl_tw/uplog2cos.log 2>&1 &
+40 13 * * * /data/script/cos_zjdyl_tw/generateTarMd5File.sh /data/script/cos_zjdyl_tw/adcost_config.ini 0 >> /data/script/cos_zjdyl_tw/uplog2cos.log 2>&1 &
+10 14 * * * /data/script/cos_zjdyl_tw/uplog2cos.sh /data/script/cos_zjdyl_tw/adcost_config.ini 0 >> /data/script/cos_zjdyl_tw/uplog2cos.log 2>&1 &

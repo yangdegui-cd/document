@@ -1,3 +1,4 @@
+T+1回传账号
 user: qkmmo
 passwd: qkmmo$6668
 
@@ -29,6 +30,6 @@ host: 119.28.83.11
 #qkmmo_om上传COS
 33 8 * * * /data/script/cos_qkmmo_om/uplog2cos.sh /data/script/cos_qkmmo_om/config.ini 1 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
 25 0 * * * /data/script/cos_qkmmo_om/generateTarMd5File.sh /data/script/cos_qkmmo_om/ad_config.ini 1 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
-35 1 * * * /data/script/cos_qkmmo_om/uplog2cos.sh /data/script/cos_qkmmo_om/ad_config.ini 1 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
+35 0 * * * /data/script/cos_qkmmo_om/uplog2cos.sh /data/script/cos_qkmmo_om/ad_config.ini 1 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
 40 13 * * * /data/script/cos_qkmmo_om/generateTarMd5File.sh /data/script/cos_qkmmo_om/adcost_config.ini 0 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
-10 14 * * * /data/script/cos_qkmmo_om/uplog2cos.sh /data/script/cos_qkmmo_om/adcost_config.ini 1 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
+10 14 * * * /data/script/cos_qkmmo_om/uplog2cos.sh /data/script/cos_qkmmo_om/adcost_config.ini 0 >> /data/script/cos_qkmmo_om/uplog2cos.log 2>&1 &
